@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A Go library for working with ANSI/VT terminal sequences. Based on [Windows Console Virtual Terminal Sequences](https://learn.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences).
+A Go library for working with ANSI/VT terminal sequences.
 
 ## Installation
 
@@ -57,7 +57,6 @@ func main() {
 
 For detailed documentation of all available functions and constants, please see:
 - [GoDoc](https://pkg.go.dev/github.com/ankddev/terminal-go)
-- [Windows Console Virtual Terminal Sequences](https://learn.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences)
 
 ## Building from Source
 
