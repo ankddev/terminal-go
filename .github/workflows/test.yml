@@ -1,0 +1,30 @@
+name: Test
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    branches: ["main"]
+    paths-ignore:
+      - "**.md"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '^1.13.1'
+      - name: Run tests
+        run: go test -v
+        
